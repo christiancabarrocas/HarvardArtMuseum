@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE1956FC254B423E0013998A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FB254B423E0013998A /* AppDelegate.swift */; };
+		DE1956FE254B423E0013998A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FD254B423E0013998A /* SceneDelegate.swift */; };
+		DE195700254B423E0013998A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FF254B423E0013998A /* ContentView.swift */; };
+		DE195702254B42420013998A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE195701254B42420013998A /* Assets.xcassets */; };
+		DE195705254B42420013998A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE195704254B42420013998A /* Preview Assets.xcassets */; };
+		DE195708254B42420013998A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE195706254B42420013998A /* LaunchScreen.storyboard */; };
+		DE195713254B42430013998A /* HarvardMuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195712254B42430013998A /* HarvardMuseumTests.swift */; };
+		DE19571E254B42430013998A /* HarvardMuseumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19571D254B42430013998A /* HarvardMuseumUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE19570F254B42430013998A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE1956F0254B423E0013998A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE1956F7254B423E0013998A;
+			remoteInfo = HarvardMuseum;
+		};
+		DE19571A254B42430013998A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE1956F0254B423E0013998A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE1956F7254B423E0013998A;
+			remoteInfo = HarvardMuseum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE1956F8254B423E0013998A /* HarvardMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvardMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1956FB254B423E0013998A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE1956FD254B423E0013998A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE1956FF254B423E0013998A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE195701254B42420013998A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE195704254B42420013998A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE195707254B42420013998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE195709254B42420013998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE19570E254B42430013998A /* HarvardMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvardMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE195712254B42430013998A /* HarvardMuseumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvardMuseumTests.swift; sourceTree = "<group>"; };
+		DE195714254B42430013998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE195719254B42430013998A /* HarvardMuseumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvardMuseumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE19571D254B42430013998A /* HarvardMuseumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvardMuseumUITests.swift; sourceTree = "<group>"; };
+		DE19571F254B42430013998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1956F5254B423E0013998A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19570B254B42430013998A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE195716254B42430013998A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE1956EF254B423E0013998A = {
+			isa = PBXGroup;
+			children = (
+				DE1956FA254B423E0013998A /* HarvardMuseum */,
+				DE195711254B42430013998A /* HarvardMuseumTests */,
+				DE19571C254B42430013998A /* HarvardMuseumUITests */,
+				DE1956F9254B423E0013998A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1956F9254B423E0013998A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1956F8254B423E0013998A /* HarvardMuseum.app */,
+				DE19570E254B42430013998A /* HarvardMuseumTests.xctest */,
+				DE195719254B42430013998A /* HarvardMuseumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1956FA254B423E0013998A /* HarvardMuseum */ = {
+			isa = PBXGroup;
+			children = (
+				DE1956FB254B423E0013998A /* AppDelegate.swift */,
+				DE1956FD254B423E0013998A /* SceneDelegate.swift */,
+				DE1956FF254B423E0013998A /* ContentView.swift */,
+				DE195701254B42420013998A /* Assets.xcassets */,
+				DE195706254B42420013998A /* LaunchScreen.storyboard */,
+				DE195709254B42420013998A /* Info.plist */,
+				DE195703254B42420013998A /* Preview Content */,
+			);
+			path = HarvardMuseum;
+			sourceTree = "<group>";
+		};
+		DE195703254B42420013998A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE195704254B42420013998A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE195711254B42430013998A /* HarvardMuseumTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE195712254B42430013998A /* HarvardMuseumTests.swift */,
+				DE195714254B42430013998A /* Info.plist */,
+			);
+			path = HarvardMuseumTests;
+			sourceTree = "<group>";
+		};
+		DE19571C254B42430013998A /* HarvardMuseumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE19571D254B42430013998A /* HarvardMuseumUITests.swift */,
+				DE19571F254B42430013998A /* Info.plist */,
+			);
+			path = HarvardMuseumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1956F7254B423E0013998A /* HarvardMuseum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE195722254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseum" */;
+			buildPhases = (
+				DE1956F4254B423E0013998A /* Sources */,
+				DE1956F5254B423E0013998A /* Frameworks */,
+				DE1956F6254B423E0013998A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarvardMuseum;
+			productName = HarvardMuseum;
+			productReference = DE1956F8254B423E0013998A /* HarvardMuseum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE19570D254B42430013998A /* HarvardMuseumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE195725254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseumTests" */;
+			buildPhases = (
+				DE19570A254B42430013998A /* Sources */,
+				DE19570B254B42430013998A /* Frameworks */,
+				DE19570C254B42430013998A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE195710254B42430013998A /* PBXTargetDependency */,
+			);
+			name = HarvardMuseumTests;
+			productName = HarvardMuseumTests;
+			productReference = DE19570E254B42430013998A /* HarvardMuseumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE195718254B42430013998A /* HarvardMuseumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE195728254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseumUITests" */;
+			buildPhases = (
+				DE195715254B42430013998A /* Sources */,
+				DE195716254B42430013998A /* Frameworks */,
+				DE195717254B42430013998A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE19571B254B42430013998A /* PBXTargetDependency */,
+			);
+			name = HarvardMuseumUITests;
+			productName = HarvardMuseumUITests;
+			productReference = DE195719254B42430013998A /* HarvardMuseumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE1956F0254B423E0013998A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DE1956F7254B423E0013998A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DE19570D254B42430013998A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = DE1956F7254B423E0013998A;
+					};
+					DE195718254B42430013998A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = DE1956F7254B423E0013998A;
+					};
+				};
+			};
+			buildConfigurationList = DE1956F3254B423E0013998A /* Build configuration list for PBXProject "HarvardMuseum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE1956EF254B423E0013998A;
+			productRefGroup = DE1956F9254B423E0013998A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1956F7254B423E0013998A /* HarvardMuseum */,
+				DE19570D254B42430013998A /* HarvardMuseumTests */,
+				DE195718254B42430013998A /* HarvardMuseumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1956F6254B423E0013998A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE195708254B42420013998A /* LaunchScreen.storyboard in Resources */,
+				DE195705254B42420013998A /* Preview Assets.xcassets in Resources */,
+				DE195702254B42420013998A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19570C254B42430013998A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE195717254B42430013998A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1956F4254B423E0013998A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1956FC254B423E0013998A /* AppDelegate.swift in Sources */,
+				DE1956FE254B423E0013998A /* SceneDelegate.swift in Sources */,
+				DE195700254B423E0013998A /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19570A254B42430013998A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE195713254B42430013998A /* HarvardMuseumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE195715254B42430013998A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE19571E254B42430013998A /* HarvardMuseumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE195710254B42430013998A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE1956F7254B423E0013998A /* HarvardMuseum */;
+			targetProxy = DE19570F254B42430013998A /* PBXContainerItemProxy */;
+		};
+		DE19571B254B42430013998A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE1956F7254B423E0013998A /* HarvardMuseum */;
+			targetProxy = DE19571A254B42430013998A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE195706254B42420013998A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE195707254B42420013998A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE195720254B42430013998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE195721254B42430013998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE195723254B42430013998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HarvardMuseum/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HarvardMuseum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE195724254B42430013998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HarvardMuseum/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HarvardMuseum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE195726254B42430013998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarvardMuseumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarvardMuseum.app/HarvardMuseum";
+			};
+			name = Debug;
+		};
+		DE195727254B42430013998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarvardMuseumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarvardMuseum.app/HarvardMuseum";
+			};
+			name = Release;
+		};
+		DE195729254B42430013998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarvardMuseumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarvardMuseum;
+			};
+			name = Debug;
+		};
+		DE19572A254B42430013998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarvardMuseumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wtp.HarvardMuseumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarvardMuseum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1956F3254B423E0013998A /* Build configuration list for PBXProject "HarvardMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE195720254B42430013998A /* Debug */,
+				DE195721254B42430013998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE195722254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE195723254B42430013998A /* Debug */,
+				DE195724254B42430013998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE195725254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE195726254B42430013998A /* Debug */,
+				DE195727254B42430013998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE195728254B42430013998A /* Build configuration list for PBXNativeTarget "HarvardMuseumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE195729254B42430013998A /* Debug */,
+				DE19572A254B42430013998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1956F0254B423E0013998A /* Project object */;
+}
