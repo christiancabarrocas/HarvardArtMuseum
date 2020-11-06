@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE1956FC254B423E0013998A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FB254B423E0013998A /* AppDelegate.swift */; };
-		DE1956FE254B423E0013998A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FD254B423E0013998A /* SceneDelegate.swift */; };
-		DE195700254B423E0013998A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FF254B423E0013998A /* ContentView.swift */; };
+		DE1956FC254B423E0013998A /* HarvardMuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FB254B423E0013998A /* HarvardMuseumApp.swift */; };
+		DE195700254B423E0013998A /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1956FF254B423E0013998A /* LandingView.swift */; };
 		DE195702254B42420013998A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE195701254B42420013998A /* Assets.xcassets */; };
 		DE195705254B42420013998A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE195704254B42420013998A /* Preview Assets.xcassets */; };
 		DE195708254B42420013998A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE195706254B42420013998A /* LaunchScreen.storyboard */; };
 		DE195713254B42430013998A /* HarvardMuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195712254B42430013998A /* HarvardMuseumTests.swift */; };
 		DE19571E254B42430013998A /* HarvardMuseumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19571D254B42430013998A /* HarvardMuseumUITests.swift */; };
+		DE195743254C18E00013998A /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195742254C18E00013998A /* Networker.swift */; };
+		DE195749254C19330013998A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE195748254C19330013998A /* Alamofire */; };
+		DE19574F254C19450013998A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE19574E254C19450013998A /* AlamofireImage */; };
+		DE195754254C19E50013998A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195753254C19E50013998A /* Model.swift */; };
+		DE195759254C22BA0013998A /* Dataprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195758254C22BA0013998A /* Dataprovider.swift */; };
+		DE195762254C28680013998A /* Console in Frameworks */ = {isa = PBXBuildFile; productRef = DE195761254C28680013998A /* Console */; };
+		DE195797254FF3740013998A /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE195796254FF3740013998A /* Builder.swift */; };
+		DE19579C25500D850013998A /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19579B25500D840013998A /* ApplicationExtension.swift */; };
+		DEB6BD7B2551562600868D72 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BD7A2551562500868D72 /* ColorExtension.swift */; };
+		DEB6BD8025516D3500868D72 /* AuthorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BD7F25516D3500868D72 /* AuthorCard.swift */; };
+		DEB6BD852551BC2400868D72 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BD842551BC2400868D72 /* Gradient.swift */; };
+		DEB6BD8A2553D84000868D72 /* AuthorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BD892553D84000868D72 /* AuthorViewModel.swift */; };
+		DEB6BD8F2553E15900868D72 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BD8E2553E15900868D72 /* HeaderView.swift */; };
+		DEB6BDAE2553E71100868D72 /* AuthorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDAD2553E71100868D72 /* AuthorList.swift */; };
+		DEB6BDB32553EA9100868D72 /* AuthorModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDB22553EA9100868D72 /* AuthorModifiers.swift */; };
+		DEB6BDBB2553F7BE00868D72 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDBA2553F7BE00868D72 /* Symbols.swift */; };
+		DEB6BDC32553FB3900868D72 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDC22553FB3900868D72 /* StringExtension.swift */; };
+		DEB6BDCC2553FC9200868D72 /* AuthorCardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDCB2553FC9200868D72 /* AuthorCardBack.swift */; };
+		DEB6BDD1255422B800868D72 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDD0255422B700868D72 /* DateExtension.swift */; };
+		DEB6BDD625544F5F00868D72 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6BDD525544F5F00868D72 /* SegmentedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +55,8 @@
 
 /* Begin PBXFileReference section */
 		DE1956F8254B423E0013998A /* HarvardMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvardMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1956FB254B423E0013998A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE1956FD254B423E0013998A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE1956FF254B423E0013998A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE1956FB254B423E0013998A /* HarvardMuseumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvardMuseumApp.swift; sourceTree = "<group>"; };
+		DE1956FF254B423E0013998A /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		DE195701254B42420013998A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE195704254B42420013998A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE195707254B42420013998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,23 @@
 		DE195719254B42430013998A /* HarvardMuseumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvardMuseumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE19571D254B42430013998A /* HarvardMuseumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvardMuseumUITests.swift; sourceTree = "<group>"; };
 		DE19571F254B42430013998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE195742254C18E00013998A /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		DE195753254C19E50013998A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DE195758254C22BA0013998A /* Dataprovider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataprovider.swift; sourceTree = "<group>"; };
+		DE195796254FF3740013998A /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		DE19579B25500D840013998A /* ApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
+		DEB6BD7A2551562500868D72 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		DEB6BD7F25516D3500868D72 /* AuthorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorCard.swift; sourceTree = "<group>"; };
+		DEB6BD842551BC2400868D72 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		DEB6BD892553D84000868D72 /* AuthorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorViewModel.swift; sourceTree = "<group>"; };
+		DEB6BD8E2553E15900868D72 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DEB6BDAD2553E71100868D72 /* AuthorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorList.swift; sourceTree = "<group>"; };
+		DEB6BDB22553EA9100868D72 /* AuthorModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModifiers.swift; sourceTree = "<group>"; };
+		DEB6BDBA2553F7BE00868D72 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		DEB6BDC22553FB3900868D72 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DEB6BDCB2553FC9200868D72 /* AuthorCardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorCardBack.swift; sourceTree = "<group>"; };
+		DEB6BDD0255422B700868D72 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		DEB6BDD525544F5F00868D72 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE195762254C28680013998A /* Console in Frameworks */,
+				DE195749254C19330013998A /* Alamofire in Frameworks */,
+				DE19574F254C19450013998A /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +137,12 @@
 		DE1956FA254B423E0013998A /* HarvardMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				DE1956FB254B423E0013998A /* AppDelegate.swift */,
-				DE1956FD254B423E0013998A /* SceneDelegate.swift */,
-				DE1956FF254B423E0013998A /* ContentView.swift */,
+				DE1956FB254B423E0013998A /* HarvardMuseumApp.swift */,
+				DEB6BD972553E28700868D72 /* Networking */,
+				DEB6BD9B2553E29400868D72 /* Model & ViewModel */,
+				DEB6BD962553E27E00868D72 /* Views */,
+				DEB6BD9F2553E2A600868D72 /* Extensions */,
+				DEB6BDA62553E2D800868D72 /* TestingPurposes */,
 				DE195701254B42420013998A /* Assets.xcassets */,
 				DE195706254B42420013998A /* LaunchScreen.storyboard */,
 				DE195709254B42420013998A /* Info.plist */,
@@ -136,6 +177,67 @@
 			path = HarvardMuseumUITests;
 			sourceTree = "<group>";
 		};
+		DEB6BD962553E27E00868D72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE1956FF254B423E0013998A /* LandingView.swift */,
+				DEB6BD8E2553E15900868D72 /* HeaderView.swift */,
+				DEB6BDD525544F5F00868D72 /* SegmentedView.swift */,
+				DEB6BDC72553FC7500868D72 /* Author */,
+				DEB6BD842551BC2400868D72 /* Gradient.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEB6BD972553E28700868D72 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DE195742254C18E00013998A /* Networker.swift */,
+				DE195758254C22BA0013998A /* Dataprovider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DEB6BD9B2553E29400868D72 /* Model & ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE195753254C19E50013998A /* Model.swift */,
+				DEB6BD892553D84000868D72 /* AuthorViewModel.swift */,
+			);
+			path = "Model & ViewModel";
+			sourceTree = "<group>";
+		};
+		DEB6BD9F2553E2A600868D72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEB6BD7A2551562500868D72 /* ColorExtension.swift */,
+				DEB6BDC22553FB3900868D72 /* StringExtension.swift */,
+				DEB6BDD0255422B700868D72 /* DateExtension.swift */,
+				DEB6BDB22553EA9100868D72 /* AuthorModifiers.swift */,
+				DEB6BDBA2553F7BE00868D72 /* Symbols.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEB6BDA62553E2D800868D72 /* TestingPurposes */ = {
+			isa = PBXGroup;
+			children = (
+				DE195796254FF3740013998A /* Builder.swift */,
+				DE19579B25500D840013998A /* ApplicationExtension.swift */,
+			);
+			path = TestingPurposes;
+			sourceTree = "<group>";
+		};
+		DEB6BDC72553FC7500868D72 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				DEB6BD7F25516D3500868D72 /* AuthorCard.swift */,
+				DEB6BDCB2553FC9200868D72 /* AuthorCardBack.swift */,
+				DEB6BDAD2553E71100868D72 /* AuthorList.swift */,
+			);
+			path = Author;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +254,11 @@
 			dependencies = (
 			);
 			name = HarvardMuseum;
+			packageProductDependencies = (
+				DE195748254C19330013998A /* Alamofire */,
+				DE19574E254C19450013998A /* AlamofireImage */,
+				DE195761254C28680013998A /* Console */,
+			);
 			productName = HarvardMuseum;
 			productReference = DE1956F8254B423E0013998A /* HarvardMuseum.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +330,11 @@
 				Base,
 			);
 			mainGroup = DE1956EF254B423E0013998A;
+			packageReferences = (
+				DE195747254C19330013998A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DE19574D254C19450013998A /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				DE195760254C28680013998A /* XCRemoteSwiftPackageReference "Console" */,
+			);
 			productRefGroup = DE1956F9254B423E0013998A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,9 +378,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1956FC254B423E0013998A /* AppDelegate.swift in Sources */,
-				DE1956FE254B423E0013998A /* SceneDelegate.swift in Sources */,
-				DE195700254B423E0013998A /* ContentView.swift in Sources */,
+				DEB6BDBB2553F7BE00868D72 /* Symbols.swift in Sources */,
+				DE195759254C22BA0013998A /* Dataprovider.swift in Sources */,
+				DEB6BD8A2553D84000868D72 /* AuthorViewModel.swift in Sources */,
+				DE1956FC254B423E0013998A /* HarvardMuseumApp.swift in Sources */,
+				DEB6BDC32553FB3900868D72 /* StringExtension.swift in Sources */,
+				DE195700254B423E0013998A /* LandingView.swift in Sources */,
+				DEB6BDCC2553FC9200868D72 /* AuthorCardBack.swift in Sources */,
+				DEB6BDAE2553E71100868D72 /* AuthorList.swift in Sources */,
+				DEB6BDB32553EA9100868D72 /* AuthorModifiers.swift in Sources */,
+				DEB6BD8F2553E15900868D72 /* HeaderView.swift in Sources */,
+				DEB6BD7B2551562600868D72 /* ColorExtension.swift in Sources */,
+				DEB6BD8025516D3500868D72 /* AuthorCard.swift in Sources */,
+				DEB6BD852551BC2400868D72 /* Gradient.swift in Sources */,
+				DEB6BDD1255422B800868D72 /* DateExtension.swift in Sources */,
+				DE19579C25500D850013998A /* ApplicationExtension.swift in Sources */,
+				DE195743254C18E00013998A /* Networker.swift in Sources */,
+				DE195754254C19E50013998A /* Model.swift in Sources */,
+				DE195797254FF3740013998A /* Builder.swift in Sources */,
+				DEB6BDD625544F5F00868D72 /* SegmentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +719,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE195747254C19330013998A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		DE19574D254C19450013998A /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		DE195760254C28680013998A /* XCRemoteSwiftPackageReference "Console" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/christiancabarrocas/Console.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE195748254C19330013998A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE195747254C19330013998A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DE19574E254C19450013998A /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE19574D254C19450013998A /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		DE195761254C28680013998A /* Console */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE195760254C28680013998A /* XCRemoteSwiftPackageReference "Console" */;
+			productName = Console;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE1956F0254B423E0013998A /* Project object */;
 }

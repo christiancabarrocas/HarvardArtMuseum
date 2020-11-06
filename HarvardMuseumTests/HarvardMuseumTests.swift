@@ -2,7 +2,7 @@
 //  HarvardMuseumTests.swift
 //  HarvardMuseumTests
 //
-//  Created by Shootr on 29/10/2020.
+//  Created by Christian Cabarrocas on 29/10/2020.
 //
 
 import XCTest
