@@ -74,3 +74,13 @@ public class AlertBuilder {
 //                .background(Color.white)
 //                .pickerStyle(SegmentedPickerStyle())
 //                .frame(width: 300)
+
+
+//@State private var currentDate = Date()
+//let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+//.onReceive(timer) { time in
+//    currentDate = Date()
+//}
+//
+//Text("\(currentDate.hour())")
+//    .padding()

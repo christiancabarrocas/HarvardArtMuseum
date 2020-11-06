@@ -6,14 +6,31 @@
 //
 
 import SwiftUI
+import Combine
 
-enum Filter: Int {
-    case authors, pieces, period
+enum FilterType: String, CaseIterable, Identifiable {
+    case authors
+    case pieces
+    case periods
+
+    var id: String {self.rawValue}
+}
+
+class Filter: ObservableObject {
+
+    var didChange = PassthroughSubject<Filter, Never>()
+
+    var values = FilterType.allCases
+    @Published var selected: FilterType = .authors {
+        didSet { self.didChange.send(self) }
+    }
 }
 
 struct SegmentedView: View {
 
-    @State var selectedFilter: Int = 0
+    @EnvironmentObject var filter: Filter
+    @State var selectedFilter = FilterType.authors.rawValue
+
     let paddingMargin: CGFloat = 30
 
     init() {
@@ -23,12 +40,13 @@ struct SegmentedView: View {
     }
     
     var body: some View {
-
         Picker(selection: $selectedFilter, label: Text("Filter")) {
-                        Text("Authors").tag(0)
-                        Text("Technique").tag(1)
-                        Text("Period").tag(2)
-        }
+            ForEach(filter.values) {
+                Text($0.rawValue.capitalized).tag($0.rawValue)
+            }
+        }.onChange(of: selectedFilter, perform: { value in
+            filter.selected = FilterType(rawValue: selectedFilter) ?? .authors
+        })
         .background(Color.gray.opacity(0.2))
         .pickerStyle(SegmentedPickerStyle())
         .frame(width: UIScreen.main.bounds.size.width - paddingMargin * 2)
@@ -38,6 +56,6 @@ struct SegmentedView: View {
 
 struct SegmentedView_Previews: PreviewProvider {
     static var previews: some View {
-        SegmentedView()
+        SegmentedView().environmentObject(Filter())
     }
 }

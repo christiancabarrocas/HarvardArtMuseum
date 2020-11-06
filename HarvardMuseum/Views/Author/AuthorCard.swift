@@ -18,9 +18,6 @@ struct AuthorCard: View {
 
     var author: AuthorViewModel
 
-    @State private var currentDate = Date()
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
     var body: some View {
         ZStack {
             AuthorCardBack()
@@ -41,12 +38,6 @@ struct AuthorCard: View {
                             .padding()
                     })
                 }
-                .onReceive(timer) { time in
-                    currentDate = Date()
-                }
-
-                Text("\(currentDate.hour())")
-                    .padding()
 
                 Spacer()
                 Text(author.displayname)

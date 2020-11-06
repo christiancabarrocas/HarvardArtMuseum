@@ -16,7 +16,8 @@ struct HeaderView: View {
     let paddingMargin: CGFloat = 30
     var title: String
     var subtitle: String
-//    @State var selectedFilter: Filter = .authors
+
+    @EnvironmentObject var filter: Filter
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,7 +27,7 @@ struct HeaderView: View {
                 .foregroundColor(.white)
                 .padding(.trailing, 50)
                 .padding(.top)
-            Text(subtitle)
+            Text(subtitle + filter.selected.rawValue.capitalized)
                 .foregroundColor(.white)
         }
         .padding(.leading, paddingMargin)
@@ -44,7 +45,7 @@ struct HeaderView_Previews: PreviewProvider {
                            endPoint: .bottomLeading).ignoresSafeArea()
 
             HeaderView(title: "Harvard \nArt \nMuseum",
-                       subtitle: "Explore the entire collection")
+                       subtitle: "Explore all ").environmentObject(Filter())
         }
     }
 }

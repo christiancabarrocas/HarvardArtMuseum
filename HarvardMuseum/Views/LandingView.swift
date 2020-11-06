@@ -10,13 +10,14 @@ import SwiftUI
 struct LandingView: View {
 
     @ObservedObject var dataprovider: Dataprovider
-
+    @EnvironmentObject var filter: Filter
+    
     var body: some View {
         ZStack {
             GradientBackground()
             VStack {
                 HeaderView(title: "Harvard \nArt \nMuseum",
-                           subtitle: "Explore the authors")
+                           subtitle: "Explore all ").environmentObject(Filter())
 
                 AuthorList(dataprovider: dataprovider)
             }
