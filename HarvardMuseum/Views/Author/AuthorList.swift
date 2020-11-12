@@ -17,12 +17,12 @@ struct AuthorList: View {
                 ForEach(dataprovider.authors) { author in
                     AuthorCard(author: author)
                         .carroussel()
-                        .framed()
+                        .frame(width: UIScreen.main.bounds.size.width/1.5,
+                               height: UIScreen.main.bounds.size.height)
                 }
             }
             .padding()
         }
-        .frame(width: UIScreen.main.bounds.width, height: AuthorConfiguration.cardHeight+50)
     }
 }
 

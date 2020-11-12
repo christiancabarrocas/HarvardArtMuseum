@@ -14,9 +14,31 @@ struct AuthorConfiguration {
     static let shadowOpacity: Double = 0.2
 }
 
+extension Animation {
+    static var cardSpring: Animation {
+        return Animation.spring(response: 0.3, dampingFraction: 0.3, blendDuration: 0)
+    }
+}
+
 struct AuthorCard: View {
 
+    @State private var offset = CGSize.zero
+
     var author: AuthorViewModel
+
+    var cardDrag: some Gesture {
+        DragGesture()
+                    .onChanged { gesture in self.offset = gesture.translation }
+                    .onEnded { _ in
+                        withAnimation(.cardSpring) {
+                            if self.offset.height < -100 {
+
+                            } else {
+                                self.offset = .zero
+                            }
+                        }
+                    }
+    }
 
     var body: some View {
         ZStack {
@@ -56,11 +78,14 @@ struct AuthorCard: View {
             .padding(.bottom, 10)
             .framed()
         }
+        .opacity(offset.height > 100 ? 2 - Double(abs(offset.height) / 150) : 1.0)
+        .offset(x: offset.width, y: offset.height)
+        .scaleEffect(offset.height < -100 ? abs(offset.height)/100 : 1.0, anchor: .bottom)
+        .gesture(cardDrag)
     }
 }
 
 struct AuthorCard_Previews: PreviewProvider {
-
     static var previews: some View {
         let author = Author(alphasort: "Boticelli, Francesco",
                            birthplace: "Verona",

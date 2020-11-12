@@ -21,8 +21,7 @@ struct AuthorCardBack: View {
 struct AuthorCardBack_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-//            GradientBackground()
-            
+            GradientBackground()            
             AuthorCardBack()
         }
     }

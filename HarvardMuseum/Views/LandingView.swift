@@ -11,15 +11,20 @@ struct LandingView: View {
 
     @ObservedObject var dataprovider: Dataprovider
     @EnvironmentObject var filter: Filter
-    
+
     var body: some View {
         ZStack {
             GradientBackground()
-            VStack {
-                HeaderView(title: "Harvard \nArt \nMuseum",
-                           subtitle: "Explore all ").environmentObject(Filter())
-
-                AuthorList(dataprovider: dataprovider)
+            ZStack {
+                VStack {
+                    Spacer()
+                    AuthorList(dataprovider: dataprovider)
+                }
+                VStack {
+                    HeaderView(title: "Harvard \nArt \nMuseum",
+                               subtitle: "Explore all ").environmentObject(Filter())
+                    Spacer()
+                }
             }
         }
     }
